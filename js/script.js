@@ -45,11 +45,13 @@ $(document).ready(function(){
   //select all
   $('body').on('click', '.selectall', function() {
     $('li i').removeClass('fa-square').addClass('fa-check-square');
-    $('li.template i ').removeClass('fa-check-square').addClass('fa-square');
+    $('li.template i ').removeClass('fa-check-square').addClass('fa-square');  //uncheck the template li so that future todo items aren't checked by default
+    $( this ).prop("checked", false);  //uncheck the check all checbox itself
   });
   //unselect all
   $('body').on('click', '.unselectall', function() {
     $('li i').removeClass('fa-check-square').addClass('fa-square');
+    $( this ).prop("checked", false);
   });
 
 

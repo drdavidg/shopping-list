@@ -77,7 +77,7 @@ ul > li .red-line > .bigcheckbox {
 .manyselect {
   padding: 3px;
 }
-. > label {
+.manyselect > label {
   color: #DFDFDF;
 }
 .todo-item {
