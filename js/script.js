@@ -42,7 +42,18 @@ $(document).ready(function(){
 
    });
 
+  //select all
+  $('body').on('click', '.selectall', function() {
+    $('li i').removeClass('fa-square').addClass('fa-check-square');
+    $('li.template i ').removeClass('fa-check-square').addClass('fa-square');
+  });
+  //unselect all
+  $('body').on('click', '.unselectall', function() {
+    $('li i').removeClass('fa-check-square').addClass('fa-square');
+  });
 
-$('body div.line-item').sortable();
+
+
+// $('body div.line-item').sortable();
 
 });
