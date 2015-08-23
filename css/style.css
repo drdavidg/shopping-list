@@ -30,7 +30,7 @@ div .logo {
   position: static;
   top: 5px;
 }
-.line-item, .add-box {
+.line-item, .add-box, .lined-box {
   height: 55px;
 }
 ul, li {
@@ -43,12 +43,12 @@ li {
 .line-item {
   border: 1px #9A9696 solid;
   border-top: none;
-  height: 55px;
+  height: 53px;
   background-color: #F9F0C6;
 }
 .lined-box-first {
   border: 1px #9A9696 solid;
-  height: 55px;
+  height: 53px;
   background-color: #8E5B02;
   padding: 8px 0;
 }
@@ -63,6 +63,13 @@ li {
   border-color: red;
   display: inline-block;
 }
+ul > li .red-line > .bigcheckbox {
+  height: 100px;
+  width: 100px;
+  position: static;
+  font-size: 2em;
+  margin: 10px auto;
+}
 .paper {
   /*width: 55%;
   margin: 185px auto;*/
@@ -72,7 +79,6 @@ li {
   display: inline-block;
   /*margin: 13px 0 13px 25px;*/
   margin-left: 29px;
-  vertical-align: middle;
   font-size: 24px;
 }
 .button-success {

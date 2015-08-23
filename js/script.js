@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
-  //cross out the text of items with the checkbox selected
-  $('ul').on('click', 'input', function() {
+  //Cross out the text of items with the checkbox selected
+  $('ul').on('click', 'i', function() {
+    $( this ).toggleClass('fa-check-square').toggleClass('fa-square');
     $( this ).closest('li').find('div.lined-box div.todo-item span').toggleClass('has-line');
   });
 
@@ -26,15 +27,16 @@ $(document).ready(function(){
      else {
        $('div.validation').css('display', 'none');
        //ADD TO DO ITEMS
-       $('body').on('click', '.button-success', function() {
+
          var itemValue = $('.lined-box-first .todo-item > input').val();
          $('li.template')
            .clone()
            .appendTo('body ul')
+           .removeClass('template')
            .find('span').text( itemValue);
-          $('ul > li.line-item:last-of-type').removeClass('template');
+
        $('body ul').sortable();
-       });
+
      }
 
 
